@@ -5,8 +5,9 @@ In this report, we are predicting the occurrence of diabetes based on lifestyle 
 Problem Definition:
 An energy-conscious diet combined with modest physical activity improves various metabolic syndrome indices and delays the onset of diabetic complications. Over the last few decades, the prevalence of illnesses linked to insulin resistance, such as the metabolic syndrome and type 2 diabetes, has risen. In college, it is very easy to be overwhelmed with school work, extracurricular activities and other priorities and so our focus on our health takes a back seat. College students experience an array of mental and physical health issues due to various factors including overwhelming stress to succeed in classes as well as personal life changes. Having to manage all these different situations can be extremely intimidating for most students. Therefore, they start developing unhealthy lifestyle habits including eating more fast food, exercising less and increased alcohol consumption. Therefore, we wanted to complete this project to allow students to predict whether their current lifestyle is sustainable or if it will result in them developing diabetes which would hinder their lives forever. 
 
-(Mid-Point Check-In)
-Dataset Modification Rationale
+(Mid-Point Check-In):
+
+Dataset Modification Rationale:
 While our project proposal discussed the macro-scale dataset, we found that the National Health and Nutrition Examination Survey (NHANES) dataset lacked statistical completeness for the laboratory medical diagnostic data points, which are key to a complete picture of a diabetes diagnosis (many patients were only surveyed for these medical biomarkers if they were already diagnosed with diabetes). For this reason, we chose to focus on the Pima Indians Diabetes Database for our initial model development, training, and evaluation efforts, and we have documented this progress in our midpoint report. That said, we have continued our exploration of the NHANES dataset in parallel and plan to compare these findings and explore the potential interplay between biomarkers and lifestyle factors in our next project phase. 
  
 Data Collection and Cleaning
@@ -17,7 +18,8 @@ We then removed correlated features, and any rows with missing values using the 
 Methods:
 The first step will be gathering data about what factors are important in diagnosing diabetes. Then, after researching which factors are important in the diagnoses, we will try a few methods of supervised learning to see what results in the most accuracy for our dataset. Given that our data is classification based, since a patient can be diagnosed with diabetic, prediabetic, and not diabetic, we will try models such as random forest and logistic regression and determine which results in more accuracy for our project. Both models have their advantages and disadvantages and trying them out will determine which blends better with our dataset.
 
-(Mid-Point Check-In)
+(Mid-Point Check-In):
+
 Final Preprocessing:
 The first phase in the process is data preprocessing, which marks the start of the procedure. Data preprocessing helps to clean, format, and organize the raw data by removing all the inconsistencies, inaccuracies, and missing data thereby making it ready for Machine Learning models. We acquired the Pima Indians Diabetes Database dataset during our initial research and then imported the relevant libraries. The libraries we imported that proved to be crucial were NumPy, Pandas, and Matplotlib. The next step was to detect and handle missing values effectively to avoid drawing incorrect conclusions and inferences from the data. This was accomplished by deleting a specific row with a null value for a feature or a specific column with more than 75% of the data missing, within our drop_row function. Splitting the dataset was the next step we completed. We split the data into a 80:20 ratio with taking 80% of the data for training the model and the balance 20% left for testing. Feature scaling was the final step in the pre-processing stage of this project. It was important to feature scale to limit the range of variables so that our group could compare them on the same level. We used the normalization method to do this. We used the sci-kit-learn library to help us do this. All the variables in the output are scaled between the values 0 and 1.
 
