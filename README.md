@@ -7,7 +7,7 @@ An energy-conscious diet combined with modest physical activity improves various
 
 (Mid-Point Check-In):
 
-Dataset Modification Rationale:
+Dataset Modification Rationale: 
 While our project proposal discussed the macro-scale dataset, we found that the National Health and Nutrition Examination Survey (NHANES) dataset lacked statistical completeness for the laboratory medical diagnostic data points, which are key to a complete picture of a diabetes diagnosis (many patients were only surveyed for these medical biomarkers if they were already diagnosed with diabetes). For this reason, we chose to focus on the Pima Indians Diabetes Database for our initial model development, training, and evaluation efforts, and we have documented this progress in our midpoint report. That said, we have continued our exploration of the NHANES dataset in parallel and plan to compare these findings and explore the potential interplay between biomarkers and lifestyle factors in our next project phase. 
  
 Data Collection and Cleaning
