@@ -69,6 +69,16 @@ From running our models, we were able to determine that the two most significant
 
 <img width="540" alt="image" src="https://user-images.githubusercontent.com/100390257/165457940-b8476ab6-c08b-4792-8969-77f866e9e7f7.png">
 
+# Macro-Scale Dataset: National Health and Nutrition Examination Survey (NHANES)
+
+To further our analysis and increase the applicability of our findings, we continued our modeling work with the NHANES dataset, following the same cleaning, preprocessing, splitting, feature scaling, and model implementation and evaluation approach. Our methods and conclusions are detailed in the following sections. 
+
+## Data Collection and Cleaning
+
+The first stage was data acquisition, in which we used a Python script to scrape the NHANES website, parse each webpage (1999-2018, two year increments) for links to .XPT files, download these files, and convert them to .CSV files. In our cleaning notebooks, we mapped the column labels of each of the 19 data collections to feature descriptions, renamed the features and standardized them across the years. Following this, we removed all ‘NaN,’ ‘Refused,’ ‘Don’t Know’ data points and quantified the removal to less than 10% of the combined data set; a sample cleaned data frame from our physical diagnostic data collection is shown below. In order to address the categorical data, we conducted a one-hot encoding cleaning exercise, in which we assigned 1s and 0s to categorical values in order to provide the ML algorithm with numerical data. We then uploaded the cleaned data collections to a local NoSQL (MongoDB) database, which housed over 14,000 rows, 19 collections, and 67 features from the processed NHANES dataset.
+
+<img width="540" alt="image" src="file:///Users/ashwinithirukkonda/Downloads/unnamed%20(3).png">
+
 ## Conclusion/Future Work:
 There are many ways to expand upon this project, such as taking into account even more data and variables that would have an influence on the prediction of diabetes. An even more elaborate project would include more studies and datasets along with the testing of more models and methods to see if they play a role in the output of our results. With further research and data in this area there is promise for more accurate predictive methods of diabetes.
 
