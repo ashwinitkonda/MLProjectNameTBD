@@ -46,7 +46,22 @@ To obtain our results, we ran three different machine learning models: logistic 
 The accuracy of the other models, logistic regression and SVC,  can be seen here:
 
 <img width="567" alt="image" src="https://user-images.githubusercontent.com/100390257/165457761-e56564c6-b7c6-4f15-a68d-8d7892b4af28.png">
- 
+
+From running our models, we were able to determine that the two most significant factors for a diabetes diagnosis are average number of pregnancies and average blood insulin levels. It’s important to note that these results are found from analysis of the Pima Indian Diabetes Dataset, and are representative of this female population.
+
+<img width="540" alt="image" src="https://user-images.githubusercontent.com/100390257/165457940-b8476ab6-c08b-4792-8969-77f866e9e7f7.png">
+
+To further upon what we already completed for the Midpoint Report, we decided to test our models on a larger dataset and so we switched our focus towards the NHANES dataset that we found during our initial research. We completed all the same steps we did for the Pima Indian Diabetes Dataset including cleaning the dataset, splitting the dataset, and feature scaling before running PCA to reduce the dimensionality and then implementing Logistic Regression and Random Forest on the dataset. After doing this we realized the conclusions we deduced using this dataset were different to those we found while using the initial dataset.
+
+Random Forest:
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/100390257/165458421-42875269-d070-42ba-8fa0-5408e32a5903.png">
+
+XGBoost:
+<img width="530" alt="image" src="https://user-images.githubusercontent.com/100390257/165458511-9347b9d2-a5b1-404d-b219-d33d8e268157.png">
+
+Future Work:
+There are many ways to expand upon this project, such as taking into account even more data and variables that would have an influence on the prediction of diabetes. An even more elaborate project would include more studies and datasets along with the testing of more models and methods to see if they play a role in the output of our results. With further research and data in this area there is promise for more accurate predictive methods of diabetes.
+
 References:
  
 Umair Muneer Butt, Sukumar Letchmunan, Mubashir Ali, Fadratul Hafinaz Hassan, Anees
