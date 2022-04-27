@@ -78,61 +78,7 @@ Dietary Behaviors and DASH Eating Plan Optimization Constraints. https://arxiv.o
  
 Timeline:
  
-MODEL 1 DESIGN & SELECTION:
-
-Data Cleaning
-- Rhea
-- 8 Days
-Data Visualization
-- Sahya
-- 10 Days
-Feature Reduction
-- Josh
-- 10 Days
-Coding & Implementation
-- Swetha & Ashwini
-- 20 Days
-Results Evaluation
-- Rhea & Josh
-- 1-2 Days
-
-
-MODEL 2 DESIGN & SELECTION:
-
-Data Cleaning
-- Swetha
-- 8 Days
-Data Visualization
-- Josh
-- 10 Days
-Feature Reduction
-- Ashwini
-- 10 Days
-Coding & Implementation
-- Rhea & Sahya
-- 20 Days
-Results Evaluation
-- Swetha & Ashwini
-- 1-2 Days
-
-
-
-MODEL 3 DESIGN & SELECTION:
-
-Data Cleaning
-- Rhea
-- 8 Days
-Data Visualization
-- Sahya
-- 10 Days
-Feature Reduction
-- Swetha
-- 10 Days
-Coding & Implementation
-- Ashwini & Josh 
-- 20 Days
-Results Evaluation & Model Comparison
-- Sahya & Josh
-- 2-3 Days
-
+<img width="577" alt="image" src="https://user-images.githubusercontent.com/100390257/165458948-7bde5249-46b5-46a8-9a34-cc817550e2da.png">
+<img width="583" alt="image" src="https://user-images.githubusercontent.com/100390257/165458992-0aa3ef77-0d50-409d-8703-d6113886e8dc.png">
+<img width="575" alt="image" src="https://user-images.githubusercontent.com/100390257/165459005-a2d196cc-bea3-4850-9b06-7473ae6bca2b.png">
 
