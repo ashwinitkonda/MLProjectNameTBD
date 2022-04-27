@@ -16,9 +16,11 @@ While T2D is more prevalent in middle-late aged adults, the formation of lifesty
 ## Overview of Datasets
 
 **Granular population-specific dataset: Pima Indians Diabetes Database**
+
 This dataset was used for our initial analysis and model development. Originally from the National Institute of Diabetes and Digestive and Kidney Diseases, features include key medical diagnostic measurements (number of pregnancies the patient has had, BMI, insulin level, age, etc). Moreover, all Pima Indian population patient data points are gathered from females who are at least 21 years old.
  
 **Macro-Scale dataset: National Health and Nutrition Examination Survey (NHANES)**
+
 This dataset was used to apply our models to a more expansive feature set and population, with a longer time-scale and wider scope. Continuous NHANES initiated in 1999, with data available until 2018 - ongoing with a sample of 5000 participants annually. Sampling utilizes a nationally representative civilian sample identified through multistage probability sampling design. The data is hosted on the NHANES webpages as raw data files (.xpt), and the key data collection categories are: Examination, Laboratory, Questionnaire, Demographics, and Dietary. Each data collection has a codebook of features (abbreviated and mapped with an alphanumeric code). 
 
 ## Granular Population-Specific Dataset: Pima Indians Diabetes Database
@@ -30,26 +32,31 @@ Feature scaling was the final step in the pre-processing stage of this project. 
 
 ### **Methods**
 **PCA**
+
 We used PCA to reduce the dimensionality of our dataset from 8 categories (not including the outcome data) and then condensing it to 7 categories of data. We then combined this data with the outcome column to create our final dataset. The reason we chose to do this is because by reducing the dataset with this method, we are coupling data that goes hand-in-hand in order to identify relationships in the data and helps maintain a standard throughout the dataset.
 
 <img width="323" alt="image" src="https://user-images.githubusercontent.com/100390257/165456721-e7129dec-18c0-4976-aeb1-a5ba6bba6c08.png">
 
 **Logistic Regression:**
+
 Logistic Regression is used to analyze the data presented and return a probability value of how likely it is to get a certain outcome. In this case we are looking at the data and figuring out the probability of predicting diabetes. How we used this method was by fitting the training data of X to the training data of y and then predicting the class labels of X.
 
 <img width="367" alt="image" src="https://user-images.githubusercontent.com/100390257/165457215-1cfeb389-c578-40f7-8283-ec25cb2d9b61.png">
  
 **Random Forest:**
+
 Random Forest was another method we tried, it was implemented similarly to Logistic Regression, but essentially what it does is turn the data into decision trees and makes its predictions based off of that. Because of this implementation Random Forest would probably work better on categorical data, which we do not have, so this may not be the most efficient way to predict diabetes. Aside from that, the more trees we create with this method the higher the accuracy should be so we tried it with 5, 10, 50, and 100 n_estimators in order to compare the results.
 
 <img width="562" alt="image" src="https://user-images.githubusercontent.com/100390257/165457359-c34a0e87-17fa-43b3-a49b-b51a3bc7f1fa.png">
 
 **SVC:**
+
 The last method we implemented was the linear SVC method. This takes the data provided and finds a linear ‘best fit’ line that simplifies the data into one set of dependent and one set of independent data. This way the data is more easily analyzed as well as visualized. We implement this the same way as the last few methods as well by fitting the data and predicting the labels to find our accuracy.
 
 <img width="320" alt="image" src="https://user-images.githubusercontent.com/100390257/165457480-51307367-926c-4b56-8519-41e05092531f.png">
 
 **Results & Discussion:**
+
 To obtain our results, we ran three different machine learning models: logistic regression, random forest, and support vector classification. They resulted in similar accuracies ranging between 70% to 80% with different ones doing slightly better than the other two each time the models were run. The random forest model, we varied the number of trees with four options: 5,10,50,100. They all performed similarly well on our dataset except 50 trees estimators performed slightly better than the other options. The graph of our results can be seen here.
 
 <img width="474" alt="image" src="https://user-images.githubusercontent.com/100390257/165457622-82178efd-17f3-4cdb-9d45-95f8b699c260.png">
