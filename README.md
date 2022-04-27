@@ -25,6 +25,9 @@ The first phase in the process is data preprocessing, which marks the start of t
 
 PCA:
 We used PCA to reduce the dimensionality of our dataset from 8 categories (not including the outcome data) and then condensing it to 7 categories of data. We then combined this data with the outcome column to create our final dataset. The reason we chose to do this is because by reducing the dataset with this method, we are coupling data that goes hand-in-hand in order to identify relationships in the data and helps maintain a standard throughout the dataset.
+
+<img width="323" alt="image" src="https://user-images.githubusercontent.com/100390257/165456721-e7129dec-18c0-4976-aeb1-a5ba6bba6c08.png">
+
  
 Logistic Regression:
 Logistic Regression is used to analyze the data presented and return a probability value of how likely it is to get a certain outcome. In this case we are looking at the data and figuring out the probability of predicting diabetes. How we used this method was by fitting the training data of X to the training data of y and then predicting the class labels of X.
