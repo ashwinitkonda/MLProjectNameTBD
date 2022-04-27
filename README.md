@@ -53,10 +53,8 @@ From running our models, we were able to determine that the two most significant
 
 To further upon what we already completed for the Midpoint Report, we decided to test our models on a larger dataset and so we switched our focus towards the NHANES dataset that we found during our initial research. We completed all the same steps we did for the Pima Indian Diabetes Dataset including cleaning the dataset, splitting the dataset, and feature scaling before running PCA to reduce the dimensionality and then implementing Logistic Regression and Random Forest on the dataset. After doing this we realized the conclusions we deduced using this dataset were different to those we found while using the initial dataset.
 
-Random Forest:
 <img width="528" alt="image" src="https://user-images.githubusercontent.com/100390257/165458421-42875269-d070-42ba-8fa0-5408e32a5903.png">
 
-XGBoost:
 <img width="530" alt="image" src="https://user-images.githubusercontent.com/100390257/165458511-9347b9d2-a5b1-404d-b219-d33d8e268157.png">
 
 Future Work:
