@@ -142,6 +142,9 @@ Michael Kahn. Diabetes Data Set. UCI Machine Learning Repository
  
 Ahmadi, F., Ganjkhanloo, F., &amp; Ghobadi, K. (n.d.). (rep.). An Open-Source Dataset on
 Dietary Behaviors and DASH Eating Plan Optimization Constraints. https://arxiv.org/pdf/2010.07531.pdf
+
+[Link to Report: PDF Format](https://drive.google.com/file/d/1QRxiNBYd6tvymTR41eBrSVitOyot0M1_/view?usp=sharing)
+
  
 ## Timeline:
  
