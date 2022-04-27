@@ -63,7 +63,7 @@ To further upon what we already completed for the Midpoint Report, we decided to
 
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/100390257/165459375-23165640-2a62-4837-a100-4642d5e20299.png">
 
-Future Work:
+Conclusion/Future Work:
 There are many ways to expand upon this project, such as taking into account even more data and variables that would have an influence on the prediction of diabetes. An even more elaborate project would include more studies and datasets along with the testing of more models and methods to see if they play a role in the output of our results. With further research and data in this area there is promise for more accurate predictive methods of diabetes.
 
 References:
