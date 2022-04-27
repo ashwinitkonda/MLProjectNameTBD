@@ -1,19 +1,19 @@
 # ML Approaches to Predict the Occurrence of Type 2 Diabetes: Final Report
 Ashwini Thirukkonda, Sahya Nara, Josh Patel, Rhea Ganguli, Swetha Mohandas
 
-##Introduction/Background 
+## Introduction/Background 
 
 In this report, we have conducted an in-depth analysis of the most optimal type 2 diabetes (T2D) dietary and lifestyle interventions, correlated to diet (dietary macronutrient composition), activity, and general health risk factors. Prior work in the diabetes classification and predictive analysis domain is built on genetic data in laboratory settings and narrowly sampled physical health, environmental, and behavioral determinant modeling. To this, the genetic and non-genetic determinants of T2D have not been fully elucidated with machine learning models, especially when leveraging large health data repositories (‘big data’). 
 
 We structured our initial analysis around the tightly-controlled, bio-marker based Pima Indians Diabetes Dataset, using the following techniques: PCA for dimensionality-reduction, logistic regression, random forest for supervised ensemble learning, and support vector classification. After evaluating the performance of these models, we set out to apply select models to the NHANES (National Health and Nutrition Examination Survey) longitudinal dataset, which integrates 19 collections of data, and 67 features, including many lifestyle variables, such as dietary macronutrient breakdowns, physical activity metrics, and alcohol consumption, as well as certain key biomarkers, including diabetes diagnoses, cholesterol levels, and fasting insulin levels. After rigorous data cleaning and preprocessing, we implemented and evaluated the performance of two classification models: Random Forest and XGBoost using the respective F-1 scores, and compiled a combined weighted analysis using the results of our chi-squared feature analysis, Random Forest model, and XGBoost model. 
 
-##Problem definition
+## Problem definition
 
 Globally, T2D is a major public health concern, with a host of complications and comorbidities impacting over 537,000,000 million adults worldwide - which scales to 1 in 10 adults globally. This figure is predicted to rise to 783,000,000 million adults by 2045, with 3 in 4 diagnosed individuals residing in low to middle-income nations. Therefore, it is critically important to develop high-performing ML-based predictive models of T2D with clear insights to apply in clinical and community interventions. 
 Extensive research has shown that an energy-conscious diet combined with modest physical activity improves various metabolic syndrome indices (including insulin resistance) and delays the onset of diabetic complications. By implementing timely and effective diagnosis, the health outcomes of millions can be improved, hospitalizations can be prevented, and the quality of life for a substantial subset of humanity can be bolstered. To this, classification-based machine learning models can aid in improved T2D prognostication by expanding the diagnostic scope beyond biomarkers and laboratory data, and integrating lifestyle factors. 
 While T2D is more prevalent in middle-late aged adults, the formation of lifestyle habits leading to insulin resistance and T2D begins in college. As students, it is easy to be overwhelmed with school work, extracurricular activities and other priorities, leading to increased levels of stress and mental/physical health concerns. This leads to the formation of unhealthy lifestyle habits, including adopting a high-glycemic and high-caloric diet, exercising less, and increasing alcohol consumption. While the college-aged population is a specialized case, the findings of our population-scale analysis can shed light on the applicability of T2D predictive analysis to early (and potentially life-altering) health interventions. 
 
-##Overview of Datasets
+## Overview of Datasets
 
 **Granular population-specific dataset: Pima Indians Diabetes Database**
 This dataset was used for our initial analysis and model development. Originally from the National Institute of Diabetes and Digestive and Kidney Diseases, features include key medical diagnostic measurements (number of pregnancies the patient has had, BMI, insulin level, age, etc). Moreover, all Pima Indian population patient data points are gathered from females who are at least 21 years old.
@@ -21,14 +21,14 @@ This dataset was used for our initial analysis and model development. Originally
 **Macro-Scale dataset: National Health and Nutrition Examination Survey (NHANES)**
 This dataset was used to apply our models to a more expansive feature set and population, with a longer time-scale and wider scope. Continuous NHANES initiated in 1999, with data available until 2018 - ongoing with a sample of 5000 participants annually. Sampling utilizes a nationally representative civilian sample identified through multistage probability sampling design. The data is hosted on the NHANES webpages as raw data files (.xpt), and the key data collection categories are: Examination, Laboratory, Questionnaire, Demographics, and Dietary. Each data collection has a codebook of features (abbreviated and mapped with an alphanumeric code). 
 
-##Granular Population-Specific Dataset: Pima Indians Diabetes Database
+## Granular Population-Specific Dataset: Pima Indians Diabetes Database
 
-###**Data Collection and Cleaning**
+### **Data Collection and Cleaning**
 Our PIDD was acquired from UCI Machine Learning’s repository, housed on Kaggle. The first phase is data preprocessing, which marks the start of the procedure. Data preprocessing helps to clean, format, and organize the raw data by removing all the inconsistencies, inaccuracies, and missing data thereby making it ready for Machine Learning models. We acquired the Pima Indians Diabetes Database dataset during our initial research and then imported the relevant libraries. The libraries we imported that proved to be crucial were NumPy, Pandas, and Matplotlib. 
 The next step was to detect and handle missing values effectively to avoid drawing incorrect conclusions and inferences from the data. This was accomplished by deleting a specific row with a null value for a feature or a specific column with more than 75% of the data missing. Splitting the dataset was the next step we completed. We split the data into a 80:20 ratio with taking 80% of the data for training the model and the balance 20% left for testing.
 Feature scaling was the final step in the pre-processing stage of this project. It was important to feature scale to limit the range of variables so that our group could compare them on the same level. We used the normalization method to do this. We used the sci-kit-learn library to help us do this. All the variables in the output are scaled between the values 0 and 1.
 
-###**Methods**
+### **Methods**
 **PCA**
 We used PCA to reduce the dimensionality of our dataset from 8 categories (not including the outcome data) and then condensing it to 7 categories of data. We then combined this data with the outcome column to create our final dataset. The reason we chose to do this is because by reducing the dataset with this method, we are coupling data that goes hand-in-hand in order to identify relationships in the data and helps maintain a standard throughout the dataset.
 
@@ -62,11 +62,10 @@ From running our models, we were able to determine that the two most significant
 
 <img width="540" alt="image" src="https://user-images.githubusercontent.com/100390257/165457940-b8476ab6-c08b-4792-8969-77f866e9e7f7.png">
 
-
-##Conclusion/Future Work:
+## Conclusion/Future Work:
 There are many ways to expand upon this project, such as taking into account even more data and variables that would have an influence on the prediction of diabetes. An even more elaborate project would include more studies and datasets along with the testing of more models and methods to see if they play a role in the output of our results. With further research and data in this area there is promise for more accurate predictive methods of diabetes.
 
-##References:
+## References:
  
 Umair Muneer Butt, Sukumar Letchmunan, Mubashir Ali, Fadratul Hafinaz Hassan, Anees
 Baqir, Hafiz Husnain Raza Sherazi, "Machine Learning Based Diabetes Classification and Prediction for Healthcare Applications", Journal of Healthcare Engineering, vol. 2021, Article ID 9930985, 17 pages, 2021. https://doi.org/10.1155/2021/9930985
@@ -80,7 +79,7 @@ Michael Kahn. Diabetes Data Set. UCI Machine Learning Repository
 Ahmadi, F., Ganjkhanloo, F., &amp; Ghobadi, K. (n.d.). (rep.). An Open-Source Dataset on
 Dietary Behaviors and DASH Eating Plan Optimization Constraints. https://arxiv.org/pdf/2010.07531.pdf
  
-##Timeline:
+## Timeline:
  
 <img width="577" alt="image" src="https://user-images.githubusercontent.com/100390257/165458948-7bde5249-46b5-46a8-9a34-cc817550e2da.png">
 <img width="583" alt="image" src="https://user-images.githubusercontent.com/100390257/165458992-0aa3ef77-0d50-409d-8703-d6113886e8dc.png">
